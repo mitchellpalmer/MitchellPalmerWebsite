@@ -1,2 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css');
+
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$headings-font-family: Futura, Trebuchet MS, Arial, sans-serif;
+$palmer-primary: #FAA819;
+$palmer-dark: #323232;
+$blue: #42ACE1;
+$green: #3EB54A;
+$red: #BE2026;
+
+$theme-colors: (
+        "palmer-primary": $palmer-primary,
+        "palmer-dark": $palmer-dark
+);
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+
+header {
+  padding: 2rem;
+  background-color: $palmer-dark;
+}
+
+p {
+  text-align: justify;
+}
+
+.logo {
+  height: 100%;
+}
+
+main {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  background-color: $palmer-dark;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+section {
+  padding-top: 2rem;
+
+  h2 {
+    display: inline-block;
+    padding: 1rem;
+    margin-left: -4em;
+    background-color: $palmer-primary;
+  }
+
+  .subtitle {
+    padding-bottom: 1rem;
+  }
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.skillset {
+
+  height: 100%;
+  padding-bottom: 1rem;
+
+  h4 {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .logo {
+    padding-bottom: 2rem;
+  }
+  section h2 {
+    margin-left: 0;
+  }
+}
