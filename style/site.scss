@@ -79,6 +79,10 @@ section {
   }
 }
 
+a.publication {
+  font-style: italic;
+}
+
 @include media-breakpoint-down(sm) {
   .logo {
     padding-bottom: 2rem;
